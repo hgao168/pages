@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pages
+  name: pages
+  namespace: angel
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pages
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: pages
+    spec:
+      containers:
+      - image: hgao168/pages:1.0
+        name: pages
+        ports:
+          - containerPort: 8080
+
