@@ -17,8 +17,13 @@ spec:
         app: pages
     spec:
       containers:
-      - image: hgao168/pages:1.0
+      - image: hgao168/pages:1.1
         name: pages
         ports:
           - containerPort: 8080
-
+        env:
+          - name: PAGE_CONTENT
+            valueFrom:
+              configMapKeyRef:
+                name: pages-config-map
+                key: PAGE_CONTENT
