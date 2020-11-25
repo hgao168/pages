@@ -17,7 +17,7 @@ spec:
         app: pages
     spec:
       containers:
-        - image: hgao168/pages:pipeline
+        - image: hgao168/pages:db
           name: pages
           ports:
             - containerPort: 8080
