@@ -24,7 +24,7 @@ spec:
           hostPath:
             path: /angel
       containers:
-        - image: hgao168/pages:distributed
+        - image: hgao168/pages:autoconfig
           name: pages
           ports:
             - containerPort: 8080

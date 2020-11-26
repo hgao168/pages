@@ -44,6 +44,7 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:2.2.3.RELEASE'
 
 	implementation 'org.springframework.cloud:spring-cloud-commons'
+	implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-config:1.1.3.RELEASE'
 
 	implementation 'mysql:mysql-connector-java:8.0.12'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
