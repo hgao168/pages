@@ -140,4 +140,9 @@ public class PageApiTest {
 
         return response.getBody().getId();
     }
+    @Test
+    public void healthTest(){
+        String body = this.restTemplate.getForObject("/actuator/health", String.class);
+        assertThat(body).contains("UP");
+    }
 }
